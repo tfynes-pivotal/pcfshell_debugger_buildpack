@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -euo pipefail
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+DEPS_DIR=$3
+DEPS_IDX=$4
+
+echo
+echo "BUILD = " && ls -laR $BUILD_DIR
+echo
+echo
+echo "DEPS = " && ls -laR $DEPS_DIR
+echo
