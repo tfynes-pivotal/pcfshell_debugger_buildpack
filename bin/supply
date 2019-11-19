@@ -17,5 +17,5 @@ echo
 echo "DEPS = " && ls -laR $DEPS_DIR
 echo
 echo
-echo "DEPS-IDX = $DEPS-IDX"
+#echo "DEPS-IDX = $DEPS-IDX"
 echo
