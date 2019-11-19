@@ -11,5 +11,11 @@ echo
 echo "BUILD = " && ls -laR $BUILD_DIR
 echo
 echo
+echo "CACHE = " && ls -laR $CACHE_DIR
+echo
+echo
 echo "DEPS = " && ls -laR $DEPS_DIR
+echo
+echo
+echo "DEPS-IDX = $DEPS-IDX"
 echo
