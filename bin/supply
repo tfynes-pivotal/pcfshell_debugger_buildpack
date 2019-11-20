@@ -8,7 +8,7 @@ DEPS_DIR=$3
 DEPS_IDX=$4
 
 echo
-echo "ROOT / DEFAULT FOLDER = " pwd && echo && ls -laR .
+echo "ROOT / DEFAULT FOLDER = " && pwd && echo && ls -laR .
 echo
 echo "FIND shellinaboxd " && find / -name shellinaboxd
 echo
