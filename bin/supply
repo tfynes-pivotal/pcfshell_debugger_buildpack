@@ -12,6 +12,14 @@ DEPS_IDX=$4
 #echo
 #echo "FIND shellinaboxd " && find / -name shellinaboxd
 echo
+echo "ARGS"
+for var in "$@"
+do
+    echo "$var"
+done
+echo
+echo
+echo
 echo "BUILD = " && ls -laR $BUILD_DIR
 echo
 echo "CACHE = " && ls -laR $CACHE_DIR
