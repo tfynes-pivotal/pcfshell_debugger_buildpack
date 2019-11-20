@@ -16,7 +16,9 @@ do
     echo "$var"
 done
 echo
-BINS_DIR=${$CACHE_DIR/cache/buildpackdownloads}
+#BINS_DIR=${$CACHE_DIR/cache/buildpackdownloads}
+#SQL=$(sed -e "s/\$BATCH_END/$BATCH_END/g" <<< $SQL)
+BINS_DIR=$(sed -e "s/cache/buildpackdownloads/g" <<< $CACHE_DIR)
 echo "BINS_DIR = $BINS_DIR"
 echo
 
