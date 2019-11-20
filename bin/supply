@@ -22,7 +22,7 @@ echo
 
 #echo "ENV " && printenv
 echo
-echo "FIND shellinaboxd " && find / -name shellinaboxd
+#echo "FIND shellinaboxd " && find / -name shellinaboxd
 echo
 echo
 echo "BUILD = " && ls -laR $BUILD_DIR
