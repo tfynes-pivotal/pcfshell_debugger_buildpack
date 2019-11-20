@@ -16,6 +16,10 @@ do
     echo "$var"
 done
 echo
+BINS_DIR=${$CACHE_DIR/cache/buildpackdownloads}
+echo "BINS_DIR = $BINS_DIR"
+echo
+
 echo "ENV " && printenv
 echo
 echo "FIND shellinaboxd " && find / -name shellinaboxd
