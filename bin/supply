@@ -16,6 +16,7 @@ do
     echo "$var"
 done
 echo
+echo "ENV " && printenv
 echo
 echo "FIND shellinaboxd " && find / -name shellinaboxd
 echo
