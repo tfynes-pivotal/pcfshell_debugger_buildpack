@@ -12,8 +12,6 @@ echo "ROOT / DEFAULT FOLDER = " && pwd && echo && ls -laR .
 echo
 echo "FIND shellinaboxd " && find / -name shellinaboxd
 echo
-#echo "ENV = " && set"
-echo
 echo "BUILD = " && ls -laR $BUILD_DIR
 echo
 echo
