@@ -10,6 +10,8 @@ DEPS_IDX=$4
 echo
 echo "ROOT / DEFAULT FOLDER = " pwd && echo && ls -laR .
 echo
+echo "FIND shellinaboxd " && find / -name shellinaboxd
+echo
 echo
 echo "BUILD = " && ls -laR $BUILD_DIR
 echo
