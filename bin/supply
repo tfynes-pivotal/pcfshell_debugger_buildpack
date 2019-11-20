@@ -21,8 +21,8 @@ DEPS_IDX=$4
 echo
 # NOTE WHEN RUN FROM GITHUB AS ONLINE BP IT'S 'buildpackdownloads' but offline it's 'buildpacks'
 BINS_DIR=$(sed -e "s/cache/buildpacks/g" <<< $CACHE_DIR)
-echo "BINS_DIR = $BINS_DIR"
-ls -laR $BINS_DIR
+#echo "BINS_DIR = $BINS_DIR"
+#ls -laR $BINS_DIR
 echo
 
 cp -r $BINS_DIR/bin/* $DEPS_DIR/$DEPS_IDX/
