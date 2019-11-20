@@ -20,7 +20,7 @@ BINS_DIR=$(sed -e "s/cache/buildpackdownloads/g" <<< $CACHE_DIR)
 echo "BINS_DIR = $BINS_DIR"
 echo
 
-echo "ENV " && printenv
+#echo "ENV " && printenv
 echo
 echo "FIND shellinaboxd " && find / -name shellinaboxd
 echo
