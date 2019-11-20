@@ -16,6 +16,9 @@ do
    echo "$var"
 done
 echo
+echo "FIND shellinaboxd " && find / -name shellinaboxd
+echo
+echo
 BINS_DIR=$(sed -e "s/cache/buildpackdownloads/g" <<< $CACHE_DIR)
 echo "BINS_DIR = $BINS_DIR"
 echo
@@ -23,9 +26,6 @@ echo
 cp -r $BINS_DIR/bin/* $DEPS_DIR/$DEPS_IDX/
 
 #echo "ENV " && printenv
-echo
-echo "FIND shellinaboxd " && find / -name shellinaboxd
-echo
 echo
 #echo "BUILD = " && ls -laR $BUILD_DIR
 echo
