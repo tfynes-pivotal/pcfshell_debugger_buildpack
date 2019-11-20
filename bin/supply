@@ -8,16 +8,14 @@ DEPS_DIR=$3
 DEPS_IDX=$4
 
 #echo
-#echo "ROOT / DEFAULT FOLDER = " && pwd && echo && ls -laR .
-echo
+##echo "ROOT / DEFAULT FOLDER = " && pwd && echo && ls -laR .
+#echo
 echo "ARGS"
 for var in "$@"
 do
-    echo "$var"
+   echo "$var"
 done
 echo
-#BINS_DIR=${$CACHE_DIR/cache/buildpackdownloads}
-#SQL=$(sed -e "s/\$BATCH_END/$BATCH_END/g" <<< $SQL)
 BINS_DIR=$(sed -e "s/cache/buildpackdownloads/g" <<< $CACHE_DIR)
 echo "BINS_DIR = $BINS_DIR"
 echo
