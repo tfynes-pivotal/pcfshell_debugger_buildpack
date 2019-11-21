@@ -2,8 +2,8 @@ applications:
 - name: hello
   path: /Users/tfynes/Documents/workspace-spring-tool-suite-4-4.2.1.RELEASE/hello/target/hello-0.0.1-SNAPSHOT.jar
   buildpacks:
-  - https://github.com/tfynes-pivotal/pcfshell_debugger_buildpack
-  - java_buildpack
+  - pcfshell_debugger_buildpack_offline
+  - java_buildpack_offline
   memory: 2GB
   routes:
   - route: hello.homelab.fynesy.com
