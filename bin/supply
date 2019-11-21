@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#set -euo pipefail
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+DEPS_DIR=$3
+DEPS_IDX=$4
+
+echo
+# NOTE WHEN RUN FROM GITHUB AS ONLINE BP IT'S 'buildpackdownloads' but offline it's 'buildpacks'
+BINS_DIR=$(sed -e "s/cache/buildpackdownloads/g" <<< $CACHE_DIR)
+echo
+
+cp -r $BINS_DIR/buildpack-assets/bin/* $DEPS_DIR/$DEPS_IDX/
+
