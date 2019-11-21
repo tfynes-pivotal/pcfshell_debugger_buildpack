@@ -7,31 +7,10 @@ CACHE_DIR=$2
 DEPS_DIR=$3
 DEPS_IDX=$4
 
-#echo
-##echo "ROOT / DEFAULT FOLDER = " && pwd && echo && ls -laR .
-#echo
-#echo "ARGS"
-#for var in "$@"
-#do
-   #echo "$var"
-#done
-#echo
-#echo "FIND shellinaboxd " && find / -name shellinaboxd
-#echo
 echo
 # NOTE WHEN RUN FROM GITHUB AS ONLINE BP IT'S 'buildpackdownloads' but offline it's 'buildpacks'
 BINS_DIR=$(sed -e "s/cache/buildpacks/g" <<< $CACHE_DIR)
-#echo "BINS_DIR = $BINS_DIR"
-#ls -laR $BINS_DIR
 echo
 
 cp -r $BINS_DIR/bin/* $DEPS_DIR/$DEPS_IDX/
 
-#echo "ENV " && printenv
-echo
-#echo "BUILD = " && ls -laR $BUILD_DIR
-echo
-#echo "CACHE = " && ls -laR $CACHE_DIR
-echo
-#echo "DEPS = " && ls -laR $DEPS_DIR
-echo
