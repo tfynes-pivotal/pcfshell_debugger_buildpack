@@ -22,5 +22,5 @@ applications:
   sidecars:
   - name: debugger
     process_types: [web]
-    command: '/home/vcap/deps/0/shellinaboxd -t -v -p 18081'
+    command: 'exec launch_debugger.sh'
     memory: 512MB
