@@ -1,11 +1,11 @@
 applications:
-- name: hello
+- name: tmfhello
   buildpacks:
   - https://github.com/tfynes-pivotal/pcfshell_debugger_buildpack
   - java_buildpack
   memory: 2GB
   routes:
-  - route: hello.homelab.fynesy.com
+  - route: tmfhello.cfapps.io
   sidecars:
   - name: debugger
     process_types: [web]
