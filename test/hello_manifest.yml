@@ -6,11 +6,11 @@ applications:
   memory: 2GB
   routes:
   - route: tmfhello.cfapps.io
+  env:
+    debugger_password: foo
   sidecars:
   - name: debugger
     process_types: [web]
     #command: '/home/vcap/deps/0/siab/shellinaboxd -t -v -p 18080 --css=/home/vcap/deps/0/siab/white-on-black.css   -s /:vcap:vcap:/home/vcap/app:bash'
     command: 'exec /home/vcap/deps/0/launch_debugger.sh'
     memory: 512MB
-    env:
-    - debugger_password: foo
